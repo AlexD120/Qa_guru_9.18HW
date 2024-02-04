@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "qa-guru-9-18hw"
+version = "0.1.0"
+description = ""
+authors = ["aliya <alexdavydov92@gmail.com>"]
+readme = "README.md"
+packages = [{include = "qa_guru_9"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+selene = "2.0.0rc7"
+pytest = "7.4.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
